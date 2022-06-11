@@ -1,6 +1,25 @@
-import React from "react";
-import "./css/normalize.css";
+import React from 'react';
+import About from './components/about/About';
+import Contact from './components/contact/Contact';
+import Experience from './components/experience/Experience';
+import Footer from './components/footer/Footer';
+import Header from './components/header/Header';
+import Nav from './components/nav/Nav';
+import Services from './components/services/Services';
+import Testimonials from './components/testimonials/Testimonials';
+import './css/normalize.css';
 
-export default function App() {
-  return <div>App</div>;
-}
+const App = () => (
+  <>
+    <Header />
+    <Nav />
+    <About />
+    <Experience />
+    <Services />
+    <Testimonials />
+    <Contact />
+    <Footer />
+  </>
+);
+
+export default App;
